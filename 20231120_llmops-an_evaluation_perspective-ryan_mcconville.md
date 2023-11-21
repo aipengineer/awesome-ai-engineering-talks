@@ -6,21 +6,21 @@
 
 - Evaluating large language models (LLMs) is more challenging than traditional ML models.
 - Standard metrics like loss may not be sufficient; actual outputs need examination.
-- LLMs are often chains of models, requiring multidimensional evaluation.
+- LLM-apps are often chains of models, requiring multidimensional evaluation.
 - Qualitative debugging and tailored quantitative metrics are critical.
 - Benchmark tasks may not reflect real-world performance.
-- Human evaluation of test sets is ideal but expensive.
+- Human annotation of data is ideal but expensive.
 - User testing and iteration are crucial for improving quality.
-- Treat LLM evaluation like software debugging.
+- Treat LLM-app evaluation like software debugging.
 - As LLMs deploy more, proper evaluation tools/practices are essential for reliability and transparency.
 
 ## Understanding Large Language Models (LLMs)
 
-Ryan from Weights & Biases introduced the significance of LLMs, emphasizing their ability to process diverse data types beyond text, including tokenized information like words and images. This versatility, showcased by large multimodal models, has revolutionized industries, especially in areas like biomedical applications.
+Ryan from Weights & Biases introduced the significance of LLMs, emphasizing their ability to process diverse data types beyond text, including data that can be tokenized, like words and images. This versatility, showcased by large multimodal models, has revolutionized industries, especially in areas like biomedical applications.
 
 ## Challenges in LLM Operationalization
 
-Distinguishing between Machine Learning Operations (MLOps) and LLMOps, the speaker highlighted challenges in deploying LLMs due to the vast, untrained space they encounter. Different from traditional ML models, training LLMs from scratch is less common, with a focus on fine-tuning or using pre-trained models. This shift introduces new complexities, particularly in evaluation.
+Distinguishing between Machine Learning Operations (MLOps) and LLMOps, Ryan highlighted challenges in deploying LLMs due to the vast, unknown space they encounter. Different from traditional ML models, training LLMs from scratch is less common, with a focus on fine-tuning or using pre-trained models. This shift introduces new complexities, particularly in evaluation.
 
 ## Evolution of LLM User Personas
 
@@ -28,7 +28,7 @@ Ryan discussed three main personas in the LLM space: LLM Creators (training LLMs
 
 ## Evaluation Strategies for LLMs
 
-The talk emphasized the importance of comprehensive evaluation beyond standard metrics. Ryan advocated for a debugger-like approach, examining the outputs of the model at different checkpoints. Tools such as Weights and Biases dashboards were recommended for effective evaluation, focusing on outputs, loss, accuracy, and real-world applicability.
+The talk emphasized the importance of comprehensive evaluation beyond standard metrics. Ryan advocated for a debugger-like approach, examining the outputs of the model at different checkpoints and logging the inputs, outputs, and metadata of LLM-apps. Tools such as Weights and Biases dashboards were recommended for effective evaluation, focusing on outputs, loss, accuracy, and real-world applicability.
 
 ## Challenges in LLM Evaluation
 
@@ -36,7 +36,7 @@ Ryan acknowledged the challenges in evaluating LLMs, especially given the secret
 
 ## Scalable User Testing for LLMs
 
-In response to a question about user testing, Ryan highlighted the importance of scalability, feasibility, and effectiveness in obtaining user feedback. Drawing parallels with A/B testing, the speaker recommended sampling users, conducting focus groups, and utilizing standard testing practices to gather valuable insights.
+In response to a question about user testing, Ryan highlighted the importance of scalability, feasibility, and effectiveness in obtaining user feedback. Drawing parallels with A/B testing, Ryan suggested sampling users, conducting focus groups, and utilizing standard testing practices to gather valuable insights.
 
 ## Application of LLMs in Traditional Problems
 
